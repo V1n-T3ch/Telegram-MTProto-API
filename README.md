@@ -29,17 +29,17 @@ If you have not yet cloned the repository, follow these steps:
 git clone https://github.com/V1n-T3ch/Telegram-MTProto-API.git
 cd Telegram-MTProto-API
 ```
-### Step 3 Create and Activate your Virtual Environment
+### Step 3: Create and Activate your Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-On Windows run 
+On Windows Powershell run 
 
 ```bash
-souce venv\Scripts\activate
+source venv\Scripts\Activate.ps1
 ```
 
 ### Step 4: Install the Required Libraries
@@ -59,6 +59,7 @@ Open the `.env` file and add your `API_ID`, `API_HASH`, `CHAT_IDS` and `INTERVAL
 # Telegram API credentials
 TELEGRAM_APP_ID=<your_api_id>
 TELEGRAM_APP_HASH=<your_api_hash>
+TELEGRAM_BOT_TOKEN=<your_bot_token>
 
 # Comma-separated list of chat/group/channel IDs or usernames
 CHAT_IDS=<chat_id_1>,<chat_id_2>,<chat_id_3>  # e.g., -1001234567890,-1234567890,@username
@@ -67,7 +68,7 @@ CHAT_IDS=<chat_id_1>,<chat_id_2>,<chat_id_3>  # e.g., -1001234567890,-1234567890
 INTERVAL_SECONDS=60
 ```
 
-Replace `<your_api_id>` and `<your_api_hash>` with the credentials you got from the Telegram Developer Portal.
+Replace `<your_api_id>` and `<your_api_hash>` with the credentials you got from the Telegram Developer Portal and `<your_bot_token>` with the actual bot token from BotFather.
 
 ### Step 6: Getting Chat, Group and Channel IDs
 
